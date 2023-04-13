@@ -26,7 +26,7 @@ export const CourseCategory = ({ src, alt, height, width }: CourseProps) => {
     <div className={styles.courseCategory_wrp}>
       <>
         <div className="flex md:justify-center">
-          <h1 className="text-xl w-[76%] uppercase font-bold mb-4 font-[Poppins]">
+          <h1 className="text-xl w-full uppercase font-bold mb-4 font-[Poppins]">
             Explore Courses By Category
           </h1>
         </div>
@@ -41,7 +41,7 @@ export const CourseCategory = ({ src, alt, height, width }: CourseProps) => {
       <div className="card_wrp gap-6 grid md:grid-cols-3 mt-8 flex-wrap justify-center">
         {cardData.map((item) => {
           return (
-            <Card className="w-[70%] flex flex-row" key={item.id}>
+            <Card className="w-full flex flex-row" key={item.id}>
               <CardHeader color="blue" className="relative h-20 w-24 mt-0">
                 <item.image className="h-[98%] w-full" />
               </CardHeader>

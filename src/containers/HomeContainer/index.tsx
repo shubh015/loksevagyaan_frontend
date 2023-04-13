@@ -26,7 +26,7 @@ export const HomeContainer: React.FC<HomeContainerProps> = ({ classNames }) => {
             Start Your Journey With Free Videos, Test Series, Quizzes, Notes, &
             Information About Government Exams
           </p>
-          <div className="gap-4 flex mt-5">
+          <div className="gap-4 flex mt-5 md:justify-start md:gap-4 justify-center">
             <Button className="rounded-full">Get Started</Button>
             <Button className="rounded-full">Get Free</Button>
           </div>
@@ -40,7 +40,7 @@ export const HomeContainer: React.FC<HomeContainerProps> = ({ classNames }) => {
           />
         </div>
       </div>
-      <div className="flex w-full justify-between items-center bg-[#f6f6f6] px-3 mb-8 flex-wrap">
+      <div className="flex w-full justify-between mt-5 items-center bg-[#f6f6f6] px-3 mb-5 flex-wrap">
         {ExpertsData.map((item) => {
           return (
             <div
