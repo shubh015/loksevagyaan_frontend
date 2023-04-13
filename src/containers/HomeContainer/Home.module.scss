@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+  .hero_wrp {
+    text-align: center;
+    justify-content: center;
+    font-size: 13px;
+    line-height: 18px;
+    
+    .course_wrp {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

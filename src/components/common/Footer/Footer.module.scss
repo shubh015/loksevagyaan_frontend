@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+    .footer_wrp{
+        justify-content: center;
+        .logo{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
