@@ -21,9 +21,9 @@ const CurrentAffairsContainer = () => {
   };
 
   return (
-    <div className="grid grid-cols-12">
+    <div className="md:grid md:grid-cols-12 flex-wrap">
       <div
-        className={`filter_wrp bg-white p-2 mt-4 sticky top-[10rem] col-span-3`}
+        className={`filter_wrp bg-white p-2 mt-4 md:sticky top-[10rem] col-span-3`}
       >
         <h2 className="text-2xl font-bold">Filter</h2>
         <div className="filter_tool">
@@ -73,7 +73,7 @@ const CurrentAffairsContainer = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-3">
+      <div className="flex-wrap md:col-span-3">
         <Card
           onClick={handleOpenModal}
           className="max-w-[24rem] overflow-hidden"

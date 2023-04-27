@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./CourseCategory.module.scss"
+import styles from "./CourseCategory.module.scss";
 import {
   Button,
   Card,
@@ -14,6 +14,7 @@ import {
 import { cardData, articlesData } from "./utils";
 import Image from "next/image";
 import { AiOutlineStar } from "react-icons/ai";
+import Link from "next/link";
 
 interface CourseProps {
   src: string;
@@ -35,23 +36,27 @@ export const CourseCategory = ({ src, alt, height, width }: CourseProps) => {
             Browse top class courses by browsing our category section which will
             be more easy for you
           </p>
-          <Button className="rounded-full">Browse</Button>
+          <Link href="/articles-category" className="rounded-full">
+            Browse
+          </Link>
         </div>
       </>
       <div className="card_wrp gap-6 grid md:grid-cols-3 mt-8 flex-wrap justify-center">
         {cardData.map((item) => {
           return (
-            <Card className="w-full flex flex-row" key={item.id}>
-              <CardHeader color="blue" className="relative h-20 w-24 mt-0">
-                <item.image className="h-[98%] w-full" />
-              </CardHeader>
-              <CardBody className="text-center">
-                <Typography variant="h5" className="mb-2">
-                  {item.title}
-                </Typography>
-                <Typography>{item.content}</Typography>
-              </CardBody>
-            </Card>
+            <Link href={`/articles/${item.title}`} key={item.id}>
+              <Card className="w-full flex flex-row">
+                <CardHeader color="blue" className="relative h-20 w-24 mt-0">
+                  <item.image className="h-[98%] w-full" />
+                </CardHeader>
+                <CardBody className="text-center">
+                  <Typography variant="h5" className="mb-2">
+                    {item.title}
+                  </Typography>
+                  <Typography>{item.content}</Typography>
+                </CardBody>
+              </Card>
+            </Link>
           );
         })}
       </div>

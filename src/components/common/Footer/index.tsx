@@ -16,7 +16,9 @@ const Footer = () => {
     >
       <div className="grid md:grid-cols-12 bg-[#f6f6f6] flex-wrap justify-between p-5">
         <div className="col-span-3">
-          <div className={`${styles.logo} hover:translate-y-[-2px] font-[Righteous] text-[16px] md:text-[26px] select-none`}>
+          <div
+            className={`${styles.logo} hover:translate-y-[-2px] font-[Righteous] text-[16px] md:text-[26px] select-none`}
+          >
             <Link href="/">
               <span className="text-xl font-[Righteous] flex gap-1">
                 <span className="text-[#4aa1fe] inline-flex items-center justify-center gap-1">
@@ -130,7 +132,7 @@ const Footer = () => {
       </div>
       <div className="container py-2 mx-auto flex items-center justify-center sm:flex-row flex-col">
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-gray-200 sm:py-2 sm:mt-0 ">
-          © 2022 Lok Seva Gyaan - All Rights Reserved
+          © 2023 Lok Seva Gyaan - All Rights Reserved
         </p>
       </div>
     </footer>

@@ -24,7 +24,7 @@ export default function Example() {
         size="xs"
         open={open}
         handler={handleOpen}
-        className="bg-transparent shadow-none"
+        className="bg-transparent shadow-none w-11/12 max-w-full"
       >
         <Card className="mx-auto w-full max-w-[24rem]">
           <CardHeader

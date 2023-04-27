@@ -1,5 +1,7 @@
 import { IconType } from "react-icons";
 import { GiBlackBook } from "react-icons/gi";
+import { BsPeopleFill } from "react-icons/bs";
+
 import { cardData } from "../CoursesCategory/utils";
 
 
@@ -25,7 +27,7 @@ export const ExpertsData :CardData[] = [
     },
     {
       id: 3,
-      image: GiBlackBook,
+      image: BsPeopleFill,
       totalCourse: "Student Family",
       experts: "30k+"
     },
