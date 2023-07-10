@@ -6,8 +6,8 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaSistrix } from "react-icons/fa";
 import { TfiAngleDown } from "react-icons/tfi";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { FaBookReader } from "react-icons/fa";
-import Login from "@/src/containers/Login";
-
+import { Login } from "@/src/containers/Login";
+// import Login from '../../../containers/Login'
 // import SearchSection from "../../ui_components/SearchSection";
 interface headerProps {
   className?: string

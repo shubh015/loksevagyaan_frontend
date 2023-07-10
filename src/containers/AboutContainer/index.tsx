@@ -4,7 +4,7 @@ import React from "react";
 const AboutContainer = () => {
   return (
     <div>
-      <Card>
+      <Card className="w-[95%] m-auto">
         <p className="font-[Poppins] text-lg px-5 py-5 leading-9">
           Welcome to <strong>Loksevagyaan</strong> – the ultimate destination
           for UPSC aspirants who dream of serving the nation. At Loksevagyaan,

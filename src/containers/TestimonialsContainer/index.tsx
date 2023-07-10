@@ -33,7 +33,7 @@ const TestimonialsContainer = () => {
             <Card
               color="transparent"
               shadow={false}
-              className="w-full max-w-[26rem] px-5 py-5 shadow-lg"
+              className="w-full max-w-[26rem] px-5 py-5 shadow-lg bg-white"
               key={item.id}
             >
               <CardHeader

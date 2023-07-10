@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Dialog,
@@ -10,10 +10,21 @@ import {
   Input,
   Checkbox,
 } from "@material-tailwind/react";
+import { SignUp } from "../SignUp";
 
-export default function Example() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen((cur) => !cur);
+export const Login = () => {
+  const [open, setOpen] = useState(false);
+  const [signUpOpen, setSignUpOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen((cur) => !cur);
+    setSignUpOpen(false);
+  };
+
+  const handleSignUpOpen = () => {
+    setOpen(false);
+    setSignUpOpen((cur) => !cur);
+  };
 
   return (
     <React.Fragment>
@@ -55,14 +66,19 @@ export default function Example() {
                 variant="small"
                 color="blue"
                 className="ml-1 font-bold"
-                onClick={handleOpen}
+                onClick={handleSignUpOpen}
               >
-                Sign up
+                SignUp
               </Typography>
             </Typography>
           </CardFooter>
         </Card>
       </Dialog>
+      <SignUp
+        open={signUpOpen}
+        handleOpen={handleSignUpOpen}
+        handleLoginOpen={handleOpen}
+      />
     </React.Fragment>
   );
-}
+};

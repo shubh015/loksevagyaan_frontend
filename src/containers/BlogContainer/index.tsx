@@ -58,22 +58,25 @@ const BlogContainer = () => {
   return (
     <div className="blog_wrp font-[Poppins]">
       <div className="flex flex-wrap-reverse md:grid md:grid-cols-12">
-        <div className="md:col-span-3 w-full border-solid border-2 border-[#4aa1fe] rounded-lg ">
-          <p className="text-lg mr-6 text-center">Latest Blogs</p>
-          <Marquee
-            marqueeItemClassName="px-4 py-3 flex"
-            height={400}
-            marqueeItems={blogCategory.map((item) => {
-              return (
-                <Card key={item.id} className="mt-5 flex">
-                  <item.image className="" />
-                  <p className="font-[Poppins] text-lg px-2 py-2">
-                    {item.content}
-                  </p>
-                </Card>
-              );
-            })}
-          />
+        <div className="md:col-span-3 w-full border-solid rounded-lg ">
+         
+      <Card className="z-30 w-96 ">
+          <p className="text-lg mr-6 text-center mb-11">Latest Blogs</p>
+            <Marquee
+              marqueeItemClassName="px-4 py-3 flex"
+              height={400}
+              marqueeItems={blogCategory.map((item) => {
+                return (
+                  <Card key={item.id} className="mt-5 flex">
+                    <item.image className="" />
+                    <p className="font-[Poppins] text-lg px-2 py-2">
+                      {item.content}
+                    </p>
+                  </Card>
+                );
+              })}
+            />
+          </Card>
         </div>
         <div className="col-sapn-2"></div>
         <div className="col-span-7">

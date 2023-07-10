@@ -21,9 +21,9 @@ const CurrentAffairsContainer = () => {
   };
 
   return (
-    <div className="md:grid md:grid-cols-12 flex-wrap">
+    <div className="md:grid md:grid-cols-12 flex-wrap current_wrp w-[95%] m-auto">
       <div
-        className={`filter_wrp bg-white p-2 mt-4 md:sticky top-[10rem] col-span-3`}
+        className={`filter_wrp p-2 mt-4 md:sticky top-[10rem] col-span-3`}
       >
         <h2 className="text-2xl font-bold">Filter</h2>
         <div className="filter_tool">
@@ -92,7 +92,7 @@ const CurrentAffairsContainer = () => {
               alt="ui/ux review check"
             />
           </CardHeader>
-          <CardBody>
+          <CardBody className="bg-white">
             <Typography variant="h4" color="blue-gray">
               UI/UX Review Check
             </Typography>

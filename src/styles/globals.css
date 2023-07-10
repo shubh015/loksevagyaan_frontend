@@ -10,7 +10,11 @@
     width: 96%;
   }
 } */
+
+body {
+  background: #ebebeb57;
+}
 .main_wrp {
-    width: 96%;
+    width: 100%;
     margin: auto;
   }

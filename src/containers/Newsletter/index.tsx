@@ -23,7 +23,7 @@ export const Newsletter = () => {
           
           </Button> */}
           <section className="newsletter_wrp container mx-auto">
-            <div className="flex items-center justify-center flex-col bg-white px-2">
+            <div className="flex items-center justify-center flex-col px-2">
               <div className="shadow-md rounded-full overflow-hidden h-[3rem] mt-5 md:w-[30rem] flex">
                 <input
                   className="outline-none p-2 flex-1 md:w-[unset] w-full"
